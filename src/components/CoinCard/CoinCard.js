@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const CoinCard = ({coin}) => {
+const CoinCard = ({ coin }) => {
   return (
     <div className='shadow-lg rounded-2xl w-[250px] bg-white p-4'>
-      <Link to='/coins'>
+      <Link to={`/coin-details/${coin.id}`}>
         <div className='flex gap-5 justify-between items-center'>
           
           <div className='flex-shrink-0'>
